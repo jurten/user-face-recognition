@@ -1,0 +1,5 @@
+# Don't track environment files
+.env/
+
+# Don't track the dataset
+*.jpg
