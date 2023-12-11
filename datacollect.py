@@ -26,8 +26,6 @@ while count<500:
 
     cv2.imshow("Frame",frame)
 
-    key_listener=cv2.waitKey(1)
-
 video.release()
 cv2.destroyAllWindows()
 print("Data collection complete")
