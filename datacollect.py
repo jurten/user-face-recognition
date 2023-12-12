@@ -24,7 +24,9 @@ while count<500:
         cv2.imwrite("datasets/user."+id+"."+str(count)+".jpg",gray[y:y+h,x:x+w])
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2) # 2 is the thickness of the rectangle
 
+    cv2.namedWindow("Frame", cv2.WINDOW_NORMAL)
     cv2.imshow("Frame",frame)
+    cv2.waitKey(1)
 
 video.release()
 cv2.destroyAllWindows()
