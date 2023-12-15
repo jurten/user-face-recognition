@@ -3,3 +3,4 @@
 
 # Don't track the dataset
 *.jpg
+*.yml
