@@ -23,7 +23,7 @@ while True:
     # creates a rectangle around the face
     for x,y,w,h in faces:
         serial, confidence = recognizer.predict(gray[y:y+h,x:x+w])
-        if confidence > 60:
+        if confidence > 70:
             cv2.rectangle(frame, (x,y-40), (x+w,y), (0,255,0), -1)
             cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2) # 2 is the thickness of the rectangle
             cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),1)
